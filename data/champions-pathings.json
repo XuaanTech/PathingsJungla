@@ -1,0 +1,1024 @@
+[
+  {
+    "id": "Aatrox",
+    "name": "Aatrox",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Aatrox.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/DaIlrj-Jcx0",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Ambessa",
+    "name": "Ambessa",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ambessa.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/eKv2TMwq2U8",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Amumu",
+    "name": "Amumu",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Amumu.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/nk3AvHUe6-Y",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Krugs → Red"
+  },
+  {
+    "id": "Belveth",
+    "name": "Bel'Veth",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Belveth.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/y4u1RbuE3Zg",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Brand",
+    "name": "Brand",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Brand.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/2Y7tYSQBPRE",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Briar",
+    "name": "Briar",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Briar.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/NKAb_yYvVnI",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Chogath",
+    "name": "Cho'Gath",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Chogath.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Wcoi8dPurEQ",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Darius",
+    "name": "Darius",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Darius.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/eOddZoDe0GA",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Diana",
+    "name": "Diana",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Diana.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/LkhP7IWL734",
+    "pathing": "Wolves → Gromp → Blue → Raptors → Red → Krugs"
+  },
+  {
+    "id": "DrMundo",
+    "name": "Dr. Mundo",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/DrMundo.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/swu8n3SzH8Y",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Krugs → Red"
+  },
+  {
+    "id": "Ekko",
+    "name": "Ekko",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ekko.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/hGTP_WgKGzs",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Elise",
+    "name": "Elise",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Elise.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Z_3ZvQGObLQ",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Evelynn",
+    "name": "Evelynn",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Evelynn.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/QtMf2a7RutE",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Fiddlesticks",
+    "name": "Fiddlesticks",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Fiddlesticks.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/moFTBW9CCV8",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Krugs → Red"
+  },
+  {
+    "id": "Fizz",
+    "name": "Fizz",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Fizz.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/eIaZd9JpKFQ",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Gragas",
+    "name": "Gragas",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Gragas.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/ByGQx0Dg1fU",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Graves",
+    "name": "Graves",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Graves.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/SP-zCLHfoIg",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Gwen",
+    "name": "Gwen",
+    "style": "DPS",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Gwen.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/OikclnJrZ7E",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Hecarim",
+    "name": "Hecarim",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Hecarim.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/zA7YX5BjCfU",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Ivern",
+    "name": "Ivern",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ivern.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/CHScG4YZLMM",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "JarvanIV",
+    "name": "Jarvan IV",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/JarvanIV.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/NsWN1BrEKIs",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Jayce",
+    "name": "Jayce",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Jayce.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Ha0T2vj5tRA",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Jax",
+    "name": "Jax",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Jax.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/LDoLXte9X98",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Karthus",
+    "name": "Karthus",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Karthus.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/RKbkb4P7iOM",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Kayn",
+    "name": "Kayn",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kayn.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/-LWzv18c6Gc",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Khazix",
+    "name": "Kha'Zix",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Khazix.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/B-9JJ9eUY7g",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Kindred",
+    "name": "Kindred",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kindred.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/-lPQBuLoLHI",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "LeeSin",
+    "name": "Lee Sin",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/LeeSin.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/hyw-xhYzzFg",
+    "pathing": "Raptors → Krugs → Red → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Lillia",
+    "name": "Lillia",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Lillia.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/PUFmDKmIIt8",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Malphite",
+    "name": "Malphite",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Malphite.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/sH4U-0To998",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Maokai",
+    "name": "Maokai",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Maokai.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/TmnLu4IShmo",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "MasterYi",
+    "name": "Master Yi",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/MasterYi.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/adQHI7UBUTU",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Morgana",
+    "name": "Morgana",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Morgana.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/lly-NG5inIU",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Naafiri",
+    "name": "Naafiri",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Naafiri.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/BjqE4OaPZyA",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Nidalee",
+    "name": "Nidalee",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nidalee.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/gJv3x1lcQyk",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Nocturne",
+    "name": "Nocturne",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nocturne.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/WLk6yUVzkUQ",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Nunu",
+    "name": "Nunu y Willump",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nunu.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/VuJNT648NHE",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Olaf",
+    "name": "Olaf",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Olaf.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/aDE8bsbG9ZM",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Qiyana",
+    "name": "Qiyana",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Qiyana.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/IR6VQWBgE_E",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Quinn",
+    "name": "Quinn",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Quinn.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/fDF6goriYRI",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Pantheon",
+    "name": "Pantheon",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Pantheon.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/7TsNOjg0Q4M",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Poppy",
+    "name": "Poppy",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Poppy.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/R2vhUXEFivo",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Rammus",
+    "name": "Rammus",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Rammus.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/aUoGZm_MVSk",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "RekSai",
+    "name": "Rek'Sai",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/RekSai.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/poedrDCnGsw",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Krugs → Red"
+  },
+  {
+    "id": "Rengar",
+    "name": "Rengar",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Rengar.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/hqh6E03FCTI",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Riven",
+    "name": "Riven",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Riven.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/OV2pvSrkwW8",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Sejuani",
+    "name": "Sejuani",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sejuani.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/W5DrZV5VnFM",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Shaco",
+    "name": "Shaco",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Shaco.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/jrA8RXMvHAA",
+    "pathing": "Wolves → Gromp → Blue → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Shyvana",
+    "name": "Shyvana",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Shyvana.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/ybnSw_VN1ic",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Skarner",
+    "name": "Skarner",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Skarner.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Z_bUhTh9PUQ",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Sylas",
+    "name": "Sylas",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sylas.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed?v=7hQHOjeN0ww",
+    "pathing": "Raptors → Red & Krugs → Back → Wolves → Gromp → Blue → Scuttle"
+  },
+  {
+    "id": "Taliyah",
+    "name": "Taliyah",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Taliyah.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/JMxnv91kasA",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Talon",
+    "name": "Talon",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Talon.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/it0TWM083eE",
+    "pathing": "Raptors → Red → Krugs → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Teemo",
+    "name": "Teemo",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Teemo.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/keOMvxFemww",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Trundle",
+    "name": "Trundle",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Trundle.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/3eB0o6-Owyk",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Udyr",
+    "name": "Udyr",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Udyr.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/X-7weFNHjac",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Vi",
+    "name": "Vi",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Vi.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/fAxLFMdib7s",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Viego",
+    "name": "Viego",
+    "style": "Powerfarming",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Viego.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/rhp3prlH9JY",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Volibear",
+    "name": "Volibear",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Volibear.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/MrtlTLIN8aU",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Warwick",
+    "name": "Warwick",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Warwick.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/a7wPbYGTqAQ",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "MonkeyKing",
+    "name": "Wukong",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/MonkeyKing.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/iXzupPe7Iec",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "XinZhao",
+    "name": "Xin Zhao",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/XinZhao.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/ILUCFwwrvn8",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Zac",
+    "name": "Zac",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zac.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/iNxG5xFk6k0",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Zed",
+    "name": "Zed",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zed.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/S1fn-B8ZsdE",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Zyra",
+    "name": "Zyra",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zyra.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/8du5Q7a9sYo",
+    "pathing": "Wolves → Gromp → Blue → Raptors → Krugs → Red"
+  },
+
+  {
+    "id": "AurelionSol",
+    "name": "Aurelion Sol",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/AurelionSol.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/2BDCvEPhPm0",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Camille",
+    "name": "Camille",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Camille.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/qO6XuhD8Qjo",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Ezreal",
+    "name": "Ezreal",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ezreal.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/FGCNQBtStCo",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Garen",
+    "name": "Garen",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Garen.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/auJ8QoU_eFA",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Illaoi",
+    "name": "Illaoi",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Illaoi.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/GyRvYR2InbA",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Kaisa",
+    "name": "Kai'Sa",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kaisa.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Z21GHhUnAUo",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Kayle",
+    "name": "Kayle",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kayle.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/2Ml_LO3oUbM",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "KSante",
+    "name": "K'Sante",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/KSante.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/DaA3wuf-B0I",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Nasus",
+    "name": "Nasus",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nasus.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/BdZJoJbN1t4",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Nautilus",
+    "name": "Nautilus",
+    "style": "Enganche",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nautilus.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/byBmMrc7STY",
+    "pathing": "Raptors → Red → Krugs → Back → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Ornn",
+    "name": "Ornn",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ornn.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Dqah6k4UPN4",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Rumble",
+    "name": "Rumble",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Rumble.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/VFFwEVRcXQg",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Sett",
+    "name": "Sett",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sett.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/pfa51eFn6Zk",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Krugs → Red"
+  },
+  {
+    "id": "Shen",
+    "name": "Shen",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Shen.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/1ScWyMXYigg",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Singed",
+    "name": "Singed",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Singed.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/uvnUfkh3cHk",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Sion",
+    "name": "Sion",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sion.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/VoR5HBDGtAE",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Taric",
+    "name": "Taric",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Taric.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/alrxoAmHyYA",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Tryndamere",
+    "name": "Tryndamere",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Tryndamere.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/B72M-1J8zoM",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "TwistedFate",
+    "name": "Twisted Fate",
+    "style": "Adaptable",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/TwistedFate.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/6WTLiuNzXIg",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Twitch",
+    "name": "Twitch",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Twitch.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/CcZz9-fdLbc",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Urgot",
+    "name": "Urgot",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Urgot.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/syaA920Jxjg",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Vayne",
+    "name": "Vayne",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Vayne.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/K4feqtgj5JI",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Yasuo",
+    "name": "Yasuo",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Yasuo.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/82Im_oHugsE",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Yone",
+    "name": "Yone",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Yone.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/pN5TXCDU5hA",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Zeri",
+    "name": "Zeri",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zeri.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/fvTBXlvSY8I",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+
+  {
+    "id": "Akali",
+    "name": "Akali",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Akali.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/cCEolpybNwc",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Akshan",
+    "name": "Akshan",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Akshan.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/DlZ6eTi6xzw",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Ahri",
+    "name": "Ahri",
+    "style": "Adaptable",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ahri.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/5XBhVGv75F8",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Alistar",
+    "name": "Alistar",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Alistar.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/eMMiMocL9V8",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Aphelios",
+    "name": "Aphelios",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Aphelios.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/G--HVjOn82M",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Caitlyn",
+    "name": "Caitlyn",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Caitlyn.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/Q6oUQTlMrJ0",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Kassadin",
+    "name": "Kassadin",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kassadin.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/eKUcZqDCYvc",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Katarina",
+    "name": "Katarina",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Katarina.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/TOhAZjYtMdw",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Senna",
+    "name": "Senna",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Senna.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/4nhC4jdxzcY",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "TahmKench",
+    "name": "Tahm Kench",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/TahmKench.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/G2hR0vigqYE",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Velkoz",
+    "name": "Vel'Koz",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Velkoz.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/0ANYsUumrng",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Yuumi",
+    "name": "Yuumi",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Yuumi.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.youtube.com/embed/pcbcqnDQUwA",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  }
+]

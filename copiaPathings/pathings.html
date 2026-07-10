@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathings Jungla</title>
+    <link rel="stylesheet" href="pathings.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="champion-header">
+        <div class="header-content">
+            <a href="../index.html" class="back-button">← Volver al inicio</a>
+            <img id="champ-icon" class="champion-header-icon" alt="Campeón">
+            <div class="champion-info">
+                <h1 id="champ-name">Cargando...</h1>
+                <span id="champ-style" class="champion-style"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="guide-container">
+
+        <!-- Widget (iframe de U.GG) -->
+        <section class="widget-section">
+            <h2>Runas y Build recomendada</h2>
+            <div id="moba-widget-container"></div>
+        </section>
+
+        <!-- Video -->
+        <section>
+            <h2>Full Clear</h2>
+            <iframe id="champ-video" allowfullscreen></iframe>
+        </section>
+
+        <!-- Pathing -->
+        <section>
+            <h2>Explicación</h2>
+            <div id="champ-pathing"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Pathings Jungla</p>
+        </div>
+    </footer>
+
+    <!-- Cargamos nuestro script (sin Mobalytics) -->
+    <script src="pathings.js"></script>
+
+</body>
+</html>

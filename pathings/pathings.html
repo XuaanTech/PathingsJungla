@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathings Jungla</title>
+    <link rel="stylesheet" href="pathings.css">
+</head>
+<body>
+
+    <header class="champion-header">
+        <div class="header-content">
+            <a href="../index.html" class="back-button">← Volver al inicio</a>
+            <img id="champ-icon" class="champion-header-icon" alt="Campeón">
+            <div class="champion-info">
+                <h1 id="champ-name">Cargando...</h1>
+                <span id="champ-style" class="champion-style"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="guide-container">
+
+        <!-- Widget de Mobalytics (se inyecta dinámicamente con JS) -->
+        <section class="widget-section">
+            <h2>Runas y Build recomendada</h2>
+            <div id="moba-widget-container"></div>
+        </section>
+
+        <!-- Vídeo del clear -->
+        <section>
+            <h2>Full Clear</h2>
+            <iframe id="champ-video" allowfullscreen></iframe>
+        </section>
+
+        <!-- Texto explicativo del pathing -->
+        <section>
+            <h2>Explicación</h2>
+            <div id="champ-pathing"></div>
+        </section>
+
+    </main>
+
+        <!-- Footer -->
+
+        <footer>
+        <div class="footer-content">
+            <p>© 2025 Pathings Jungla</p>
+        </div>
+    </footer>
+
+    <!-- Script oficial de Mobalytics (se carga de forma asíncrona) -->
+    <script async src="http://cdn.jsdelivr.net/gh/mobalyticshq/mobalytics-widgets/build/mobalytics-widgets.js"></script>
+
+    <!-- Nuestra lógica (se carga después para que el script de Mobalytics ya esté disponible) -->
+    <script src="pathings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Tengo que arreglar para que se carguen iconos de las runas mediante imagenes locales.
+
+Mejorar estetica de todas las paginas (css)
+
+Rellenar secciones vacías en página principal
