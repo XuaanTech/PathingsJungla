@@ -326,24 +326,61 @@ section h2 {
 }
 
 /* ============================================================
-   FOOTER
+   FOOTER - Estilo elegante y minimalista
    ============================================================ */
 footer {
     margin-top: 80px;
-    border-top: 1px solid var(--border);
-    padding: 30px;
+    padding: 40px 20px 30px;
+    border-top: 2px solid var(--border-gold);
+    background: linear-gradient(180deg, rgba(6,13,23,0.9) 0%, rgba(6,13,23,1) 100%);
     text-align: center;
     color: var(--text2);
-    background: rgba(8, 14, 24, 0.5);
-    backdrop-filter: blur(10px);
 }
 
 .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
     letter-spacing: 0.3px;
+}
+
+.footer-content p:first-child {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.footer-content a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
+    border-bottom: 1px dotted transparent;
+}
+
+.footer-content a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
+    border-bottom-color: var(--gold);
+}
+
+/* Efecto de brillo en el borde superior */
+footer::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: -42px auto 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(200, 170, 110, 0.2);
 }
 
 /* ============================================================
@@ -437,6 +474,74 @@ footer {
     section h2 {
         font-size: 22px;
     }
+
+    /* Ajuste para el footer */
+    footer {
+        margin-top: 60px;
+        padding: 30px 16px 25px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE - Tablet pequeña / móvil grande (máx 768px)
+   ============================================================ */
+@media(max-width: 768px) {
+    .guide-container {
+        padding: 30px 16px;
+    }
+
+    section {
+        padding: 22px 18px;
+        margin-bottom: 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    #champ-name {
+        font-size: 38px;
+    }
+
+    .champion-header-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .champion-header {
+        padding: 20px 16px;
+    }
+
+    .champion-info {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .champion-style {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    #champ-pathing {
+        font-size: 15px;
+        padding: 20px 18px;
+    }
+
+    .rune-icon, .item-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .top-grid {
+        gap: 18px;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 30px 16px 20px;
+    }
 }
 
 /* ============================================================
@@ -481,5 +586,53 @@ footer {
     #champ-pathing {
         padding: 22px 20px;
         font-size: 15px;
+    }
+
+    /* Ajustes adicionales para móvil */
+    .guide-container {
+        padding: 20px 12px;
+    }
+
+    section h2 {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .champion-header-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .back-button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .champion-style {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    #champ-pathing {
+        font-size: 14px;
+        padding: 16px 14px;
+    }
+
+    .rune-icon, .item-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .top-grid {
+        gap: 14px;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 25px 14px 18px;
+    }
+
+    .footer-content p {
+        font-size: 0.85rem;
     }
 }

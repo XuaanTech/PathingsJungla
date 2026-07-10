@@ -20,39 +20,31 @@
     </header>
 
     <main class="guide-container">
-
-        <!-- Widget de Mobalytics (se inyecta dinámicamente con JS) -->
         <section class="widget-section">
             <h2>Runas y Build recomendada</h2>
             <div id="moba-widget-container"></div>
         </section>
 
-        <!-- Vídeo del clear -->
         <section>
             <h2>Full Clear</h2>
             <iframe id="champ-video" allowfullscreen></iframe>
         </section>
 
-        <!-- Texto explicativo del pathing -->
         <section>
             <h2>Explicación</h2>
             <div id="champ-pathing"></div>
         </section>
-
     </main>
 
-        <!-- Footer -->
-
-        <footer>
+    <footer>
         <div class="footer-content">
             <p>© 2025 Pathings Jungla</p>
+            <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">
+                <a href="../paginas-legales/politicas.html" style="color: #e2b714; text-decoration: none;">Políticas y Aviso Legal</a>
+            </p>
         </div>
     </footer>
 
-    <!-- Script oficial de Mobalytics (se carga de forma asíncrona) -->
-    <script async src="http://cdn.jsdelivr.net/gh/mobalyticshq/mobalytics-widgets/build/mobalytics-widgets.js"></script>
-
-    <!-- Nuestra lógica (se carga después para que el script de Mobalytics ya esté disponible) -->
     <script src="pathings.js"></script>
 
 </body>

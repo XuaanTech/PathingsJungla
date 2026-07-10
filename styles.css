@@ -436,21 +436,70 @@ main {
 }
 
 /* ============================================================
-   FOOTER
+   FOOTER - Estilo elegante y minimalista
    ============================================================ */
 footer {
     margin-top: 80px;
-    border-top: 1px solid var(--border);
-    padding: 30px;
+    padding: 40px 20px 30px;
+    border-top: 2px solid var(--border-gold);
+    background: linear-gradient(180deg, rgba(6,13,23,0.9) 0%, rgba(6,13,23,1) 100%);
     text-align: center;
     color: var(--text2);
 }
 
 .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.footer-content p:first-child {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.footer-content a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, text-shadow 0.3s;
+    border-bottom: 1px dotted transparent;
+}
+
+.footer-content a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
+    border-bottom-color: var(--gold);
+}
+
+/* Separador decorativo entre el texto y el enlace */
+.footer-content .separator {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: var(--border-gold);
+    margin: 4px 0;
+}
+
+/* Efecto de brillo en el borde superior */
+footer::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: -42px auto 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(200, 170, 110, 0.2);
 }
 
 /* ============================================================
