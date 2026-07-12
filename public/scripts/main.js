@@ -233,29 +233,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // =====================================
-// CARGAR Y RENDERIZAR CONCEPTOS (DESDE JS)
+// CARGAR Y RENDERIZAR CONCEPTOS (solo si no existen)
 // =====================================
-
 document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById("concept-grid");
+  if (!grid) return;
+
+  // Si el grid ya tiene hijos (renderizado en servidor), no hacemos nada
+  if (grid.children.length > 0) {
+    console.log('✅ Conceptos ya renderizados en el servidor.');
+    return;
+  }
+
+  // Si no hay contenido, lo cargamos con fetch (fallback)
   fetch("data/conceptos.json")
     .then(response => response.json())
     .then(data => {
-      const grid = document.getElementById("concept-grid");
-      if (!grid) return;
-
-      grid.innerHTML = ""; // Limpiamos por si hay algo
-
+      grid.innerHTML = "";
       data.forEach(concepto => {
         const card = document.createElement("article");
         card.className = "concept-card";
+        card.dataset.id = concepto.id;
         card.innerHTML = `
-          <h3>${concepto.name}</h3>
-          <p>${concepto.shortDesc}</p>
+          <a href="/conceptos/${concepto.id}">
+            <h3>${concepto.name}</h3>
+            <p>${concepto.shortDesc}</p>
+          </a>
         `;
-        card.style.cursor = "pointer";
-        card.addEventListener("click", () => {
-          window.location.href = `/conceptos/${concepto.id}`;
-        });
         grid.appendChild(card);
       });
     })

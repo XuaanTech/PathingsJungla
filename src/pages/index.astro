@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import champions from '../data/champions.json';
-import conceptos from '../data/conceptos.json'; // Si no tienes conceptos.json, elimina esta línea y la sección de abajo
+import conceptos from '../data/conceptos.json';
 ---
 
 <Layout 
@@ -57,7 +57,6 @@ import conceptos from '../data/conceptos.json'; // Si no tienes conceptos.json, 
         </select>
       </div>
       <div id="champion-list">
-        <!-- Generamos las tarjetas desde el JSON en el servidor -->
         {champions.map((champion) => (
           <article class="champion-card" data-id={champion.id}>
             <img class="champion-icon" src={champion.icon} alt={champion.name} loading="lazy" />
@@ -75,6 +74,14 @@ import conceptos from '../data/conceptos.json'; // Si no tienes conceptos.json, 
         <p>Todo lo necesario para mejorar tu macro.</p>
       </div>
       <div class="concept-grid" id="concept-grid">
+        {conceptos.map((concepto) => (
+          <article class="concept-card" data-id={concepto.id}>
+            <a href={`/conceptos/${concepto.id}`}>
+              <h3>{concepto.name}</h3>
+              <p>{concepto.shortDesc}</p>
+            </a>
+          </article>
+        ))}
       </div>
     </section>
   </main>
