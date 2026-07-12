@@ -1,0 +1,32 @@
+---
+import conceptos from '../data/conceptos.json';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conceptos de Jungla</title>
+  <meta name="description" content="Todos los conceptos avanzados para mejorar tu macro." />
+  <link rel="stylesheet" href="/styles/conceptos.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+  <main>
+    <h1>Conceptos de Jungla</h1>
+    <div class="concept-grid">
+      {conceptos.map((concepto) => (
+        <article class="concept-card" data-id={concepto.id}>
+          <a href={`/conceptos/${concepto.id}`}>
+            <h3>{concepto.name}</h3>
+            <p>{concepto.shortDesc}</p>
+          </a>
+        </article>
+      ))}
+    </div>
+    <a href="/">← Volver al inicio</a>
+  </main>
+  <script src="/scripts/conceptos.js" defer></script>
+</body>
+</html>

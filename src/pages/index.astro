@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+import champions from '../data/champions.json';
+import conceptos from '../data/conceptos.json'; // Si no tienes conceptos.json, elimina esta línea y la sección de abajo
+---
+
+<Layout 
+  title="Pathings Jungla | League of Legends" 
+  description="Guías de jungla, full clears, builds, runas y conceptos avanzados para League of Legends."
+>
+  <!-- HEADER -->
+  <header id="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>Pathings Jungla</h1>
+        <span>League of Legends Jungle Guides</span>
+      </div>
+      <nav id="main-nav">
+        <button data-section="home">Inicio</button>
+        <button data-section="champions">Campeones</button>
+        <button data-section="concepts">Conceptos</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Aprende los mejores pathings de la jungla.</h2>
+      <p>Full Clears, rutas óptimas, builds, runas y conceptos avanzados para dominar cualquier campeón.</p>
+      <div class="hero-search">
+        <input type="text" id="hero-search" placeholder="Buscar campeón...">
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HOME -->
+    <section id="section-home" class="section active">
+      <div class="section-header">
+        <h2>Bienvenido</h2>
+        <p>Encuentra el mejor pathing para cualquier jungla.</p>
+      </div>
+    </section>
+
+    <!-- CAMPEONES -->
+    <section id="section-champions" class="section">
+      <div class="section-header">
+        <h2>Campeones</h2>
+        <p>Selecciona un campeón para ver su guía.</p>
+      </div>
+      <div id="filters">
+        <input type="text" id="search-champion" placeholder="Buscar campeón...">
+        <select id="filter-style">
+          <option value="">Todos los estilos</option>
+        </select>
+      </div>
+      <div id="champion-list">
+        <!-- Generamos las tarjetas desde el JSON en el servidor -->
+        {champions.map((champion) => (
+          <article class="champion-card" data-id={champion.id}>
+            <img class="champion-icon" src={champion.icon} alt={champion.name} loading="lazy" />
+            <h3>{champion.name}</h3>
+            <p>{champion.style}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- CONCEPTOS -->
+    <section id="section-concepts" class="section">
+      <div class="section-header">
+        <h2>Conceptos de Jungla</h2>
+        <p>Todo lo necesario para mejorar tu macro.</p>
+      </div>
+      <div class="concept-grid" id="concept-grid">
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Pathings Jungla</p>
+      <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">
+        <a href="/paginas-legales/politicas.html" style="color: #e2b714; text-decoration: none;">Políticas y Aviso Legal</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- CSS y JS específicos de esta página -->
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/scripts/main.js" defer></script>
+</Layout>

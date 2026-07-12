@@ -1,0 +1,123 @@
+---
+import pathings from '../../data/champions-pathings.json';
+
+export function getStaticPaths() {
+  return pathings.map((item) => ({
+    params: { id: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+
+// Verificamos si hay datos de runas o build
+const hasRunes = item.runes && item.runes.length > 0;
+const hasBuild = item.build && item.build.length > 0;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{item.name} - Pathing Jungla | League of Legends</title>
+  <meta name="description" content={`Guía de jungla para ${item.name}: pathing óptimo, runas y build.`} />
+  <link rel="stylesheet" href="/styles/pathings.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+  <!-- HEADER DEL CAMPEÓN -->
+  <header class="champion-header">
+    <div class="header-content">
+      <a href="/" class="back-button">← Volver al inicio</a>
+      <img class="champion-header-icon" src={item.icon} alt={item.name} />
+      <div class="champion-info">
+        <h1 id="champ-name">{item.name}</h1>
+        <span class="champion-style">{item.style}</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="guide-container">
+
+    <!-- SECCIÓN DE RUNAS Y BUILD (CON ESTILOS EN LÍNEA) -->
+    <section>
+      <h2>🪄 Runas y ⚔️ Build</h2>
+      
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; width: 100%;">
+          <!-- Runas (solo si hay datos) -->
+          {hasRunes && (
+            <div style="flex: 0 1 auto; min-width: 200px; text-align: center;">
+              <h3 style="color: var(--gold-light); margin-bottom: 10px; font-size: 18px;">Runas</h3>
+              <div id="champ-runes" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+                {item.runes.map((rune) => (
+                  <img class="rune-icon" src={rune} alt="Runa" loading="lazy" />
+                ))}
+              </div>
+            </div>
+          )}
+
+          <!-- Build (solo si hay datos) -->
+          {hasBuild && (
+            <div style="flex: 0 1 auto; min-width: 200px; text-align: center;">
+              <h3 style="color: var(--gold-light); margin-bottom: 10px; font-size: 18px;">Build</h3>
+              <div id="champ-build" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+                {item.build.map((itemBuild) => (
+                  <img class="item-icon" src={itemBuild} alt="Objeto" loading="lazy" />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <!-- BOTÓN U.GG -->
+        <div style="text-align: center; width: 100%;">
+          <a 
+            href={`https://u.gg/lol/champions/${item.id.toLowerCase()}/build/jungle`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display: inline-block; padding: 12px 24px; background-color: #1a1a2e; color: #fff; text-decoration: none; border-radius: 8px; font-weight: bold; border: 2px solid #e2b714; font-family: Arial, sans-serif;"
+            onmouseover="this.style.backgroundColor='#2a2a4e'"
+            onmouseout="this.style.backgroundColor='#1a1a2e'"
+          >
+            Ver build de {item.name} en U.GG
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- VIDEO -->
+    <section>
+      <h2>🎥 Full Clear</h2>
+      {item.video ? (
+        <iframe id="champ-video" src={item.video} title={`Full Clear de ${item.name}`} allowfullscreen></iframe>
+      ) : (
+        <p style="color: var(--text2);">Próximamente</p>
+      )}
+    </section>
+
+    <!-- PATHING -->
+    <section>
+      <h2>🗺️ Pathing recomendado</h2>
+      <div id="champ-pathing">
+        {item.pathing || 'Próximamente'}
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Pathings Jungla</p>
+      <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">
+        <a href="/paginas-legales/politicas.html" style="color: #e2b714; text-decoration: none;">Políticas y Aviso Legal</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

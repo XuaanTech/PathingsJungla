@@ -1,0 +1,80 @@
+---
+import conceptos from '../../data/conceptos.json';
+
+export function getStaticPaths() {
+  return conceptos.map((item) => ({
+    params: { id: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{item.name} - Conceptos de Jungla | Pathings Jungla</title>
+  <meta name="description" content={item.descripcion ? item.descripcion.substring(0, 150) : item.shortDesc} />
+  <link rel="stylesheet" href="/styles/conceptos.css" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="concepto-header">
+    <div class="header-content">
+      <a href="/" class="back-button">← Volver al inicio</a>
+      <!-- Icono (solo si existe) -->
+      {item.icon && <img id="concepto-icon" class="concepto-header-icon" src={item.icon} alt={item.name} />}
+      <div class="concepto-info">
+        <h1 id="concepto-name">{item.name}</h1>
+        <span id="concepto-short" class="concepto-style">{item.shortDesc}</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="guide-container">
+
+    <!-- Video (si existe) -->
+    {item.video && (
+      <section id="video-section">
+        <h2>Vídeo explicativo</h2>
+        <iframe id="concepto-video" src={item.video} allowfullscreen></iframe>
+      </section>
+    )}
+
+    <!-- Explicación detallada -->
+    <section>
+      <h2>Explicación</h2>
+      <div id="concepto-descripcion">
+        {item.descripcion || item.shortDesc}
+      </div>
+    </section>
+
+    <!-- Recursos adicionales (enlaces, etc.) -->
+    <section>
+      <h2>Recursos adicionales</h2>
+      <div id="concepto-recursos">
+        <p>Próximamente más guías y ejemplos prácticos.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Pathings Jungla</p>
+      <p style="font-size: 0.8rem; color: #888; margin-top: 5px;">
+        <a href="/paginas-legales/politicas.html" style="color: #e2b714; text-decoration: none;">Políticas y Aviso Legal</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- No necesitas conceptos.js porque el contenido ya está en el HTML -->
+</body>
+</html>

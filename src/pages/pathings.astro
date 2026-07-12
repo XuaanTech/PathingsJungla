@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import pathings from '../data/champions-pathings.json'; // <- Cambiado
+---
+
+<Layout title="Pathings - Todos los campeones" description="Listado completo de pathings de jungla para cada campeón.">
+  <main>
+    <h1>Pathings de Jungla</h1>
+    <div class="pathing-grid">
+      {pathings.map((item) => (
+        <article class="pathing-card" data-id={item.id}>
+          <a href={`/pathing/${item.id}`}>
+            <img src={item.icon} alt={item.name} loading="lazy" />
+            <h3>{item.name}</h3>
+            <p>{item.style}</p>
+            <p><strong>Pathing:</strong> {item.pathing}</p>
+          </a>
+        </article>
+      ))}
+    </div>
+  </main>
+  <link rel="stylesheet" href="/styles/pathings.css" />
+  <script src="/scripts/pathings.js" defer></script>
+</Layout>
