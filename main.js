@@ -73,7 +73,7 @@ buttons.forEach(button => {
 
 
 // =====================================
-// CARGAR JSON
+// CARGAR JSON Y GENERAR FILTROS DINÁMICOS
 // =====================================
 
 fetch("data/champions.json")
@@ -84,6 +84,9 @@ fetch("data/champions.json")
 
         champions = data;
 
+        // Llenar el selector de estilos con los valores del JSON
+        populateStyleFilter();
+
         renderChampions();
 
     })
@@ -93,6 +96,35 @@ fetch("data/champions.json")
         console.error(error);
 
     });
+
+
+// =====================================
+// RELLENAR EL SELECT DE ESTILOS DESDE LOS DATOS
+// =====================================
+
+function populateStyleFilter() {
+
+    // Extraer estilos únicos y ordenarlos alfabéticamente
+    const styles = [...new Set(champions.map(champion => champion.style))].sort();
+
+    // Eliminar opciones anteriores (excepto "Todos los estilos")
+    while (styleFilter.options.length > 1) {
+        styleFilter.remove(1);
+    }
+
+    // Crear y añadir cada estilo como opción
+    styles.forEach(style => {
+
+        const option = document.createElement("option");
+
+        option.value = style.toLowerCase(); // valor en minúsculas para el filtro
+        option.textContent = style;         // texto original con mayúsculas
+
+        styleFilter.appendChild(option);
+
+    });
+
+}
 
 
 // =====================================
@@ -250,3 +282,40 @@ heroSearch.addEventListener("keydown", event => {
 // =====================================
 
 showSection("home");
+
+// =====================================
+// CARGAR Y RENDERIZAR CONCEPTOS
+// =====================================
+
+// Aseguramos que el DOM esté listo (por si main.js carga antes que el HTML)
+document.addEventListener('DOMContentLoaded', () => {
+    fetch("data/conceptos.json")
+        .then(response => response.json())
+        .then(data => {
+            const grid = document.getElementById("concept-grid");
+            if (!grid) return; // Si no existe el contenedor, salimos
+
+            grid.innerHTML = ""; // Limpiamos por si había algo
+
+            data.forEach(concepto => {
+                // Crear tarjeta de concepto
+                const card = document.createElement("article");
+                card.className = "concept-card";
+                card.innerHTML = `
+                    <h3>${concepto.name}</h3>
+                    <p>${concepto.shortDesc}</p>
+                `;
+
+                // Al hacer clic, ir a la página de detalle
+                card.style.cursor = "pointer";
+                card.addEventListener("click", () => {
+                    window.location.href = `./conceptos/conceptos.html?id=${concepto.id}`;
+                });
+
+                grid.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error("Error cargando conceptos.json:", error);
+        });
+});

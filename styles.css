@@ -352,8 +352,7 @@ main {
    ============================================================ */
 #champion-list {
     display: grid;
-    /* Columnas automáticas que se adaptan, mínimo 240px */
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(4, 1fr);  /* 4 columnas fijas en pantallas grandes */
     gap: 24px;
 }
 
@@ -405,8 +404,7 @@ main {
    ============================================================ */
 .concept-grid {
     display: grid;
-    /* Columnas que se adaptan, mínimo 300px */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);  /* 3 columnas fijas en pantallas grandes */
     gap: 24px;
 }
 

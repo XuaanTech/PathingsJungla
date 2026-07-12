@@ -1020,5 +1020,685 @@
     "build": [],
     "video": "https://www.youtube.com/embed/pcbcqnDQUwA",
     "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Anivia",
+    "name": "Anivia",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Anivia.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Annie",
+    "name": "Annie",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Annie.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Ashe",
+    "name": "Ashe",
+    "style": "Utilidad",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ashe.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Aurora",
+    "name": "Aurora",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Aurora.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Azir",
+    "name": "Azir",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Azir.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Bard",
+    "name": "Bard",
+    "style": "Errante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Bard.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Blitzcrank",
+    "name": "Blitzcrank",
+    "style": "Enganche",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Blitzcrank.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Braum",
+    "name": "Braum",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Braum.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Cassiopeia",
+    "name": "Cassiopeia",
+    "style": "DPS",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Cassiopeia.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.bilibili.com/video/BV1dA9uBSEn2",
+    "pathing": "Blue → Gromp → Wolves → Raptors → Red → Krugs"
+  },
+  {
+    "id": "Corki",
+    "name": "Corki",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Corki.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Draven",
+    "name": "Draven",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Draven.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Fiora",
+    "name": "Fiora",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Fiora.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Galio",
+    "name": "Galio",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Galio.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Gangplank",
+    "name": "Gangplank",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Gangplank.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Gnar",
+    "name": "Gnar",
+    "style": "Adaptable",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Gnar.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Heimerdinger",
+    "name": "Heimerdinger",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Heimerdinger.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Hwei",
+    "name": "Hwei",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Hwei.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Irelia",
+    "name": "Irelia",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Irelia.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Janna",
+    "name": "Janna",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Janna.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Jhin",
+    "name": "Jhin",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Jhin.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Jinx",
+    "name": "Jinx",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Jinx.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Kalista",
+    "name": "Kalista",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kalista.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Karma",
+    "name": "Karma",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Karma.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Kennen",
+    "name": "Kennen",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kennen.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Kled",
+    "name": "Kled",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Kled.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "KogMaw",
+    "name": "Kog'Maw",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/KogMaw.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Leblanc",
+    "name": "LeBlanc",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Leblanc.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Leona",
+    "name": "Leona",
+    "style": "Tanque",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Leona.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Lissandra",
+    "name": "Lissandra",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Lissandra.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Lucian",
+    "name": "Lucian",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Lucian.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.bilibili.com/video/BV1gBPkzwEB7",
+    "pathing": "Red → Krugs → Raptors → Wolves → Blue → Gromp"
+  },
+  {
+    "id": "Lulu",
+    "name": "Lulu",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Lulu.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Lux",
+    "name": "Lux",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Lux.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Malzahar",
+    "name": "Malzahar",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Malzahar.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Mel",
+    "name": "Mel",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Mel.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Milio",
+    "name": "Milio",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Milio.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "MissFortune",
+    "name": "Miss Fortune",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/MissFortune.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Mordekaiser",
+    "name": "Mordekaiser",
+    "style": "Duelista",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Mordekaiser.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.bilibili.com/video/BV19PSUBmECi",
+    "pathing": "Red → Krugs → Raptors → Wolves → Gromp → Blue"
+  },
+  {
+    "id": "Nami",
+    "name": "Nami",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nami.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Neeko",
+    "name": "Neeko",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Neeko.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Nilah",
+    "name": "Nilah",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Nilah.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Orianna",
+    "name": "Orianna",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Orianna.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Pyke",
+    "name": "Pyke",
+    "style": "Sigilo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Pyke.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Rakan",
+    "name": "Rakan",
+    "style": "Iniciador",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Rakan.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Rell",
+    "name": "Rell",
+    "style": "Iniciador",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Rell.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Renata",
+    "name": "Renata Glasc",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Renata.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Renekton",
+    "name": "Renekton",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Renekton.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Ryze",
+    "name": "Ryze",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ryze.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Samira",
+    "name": "Samira",
+    "style": "Agresivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Samira.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Seraphine",
+    "name": "Seraphine",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Seraphine.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Sivir",
+    "name": "Sivir",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sivir.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Smolder",
+    "name": "Smolder",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Smolder.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Sona",
+    "name": "Sona",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Sona.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Soraka",
+    "name": "Soraka",
+    "style": "Protector",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Soraka.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Swain",
+    "name": "Swain",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Swain.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Syndra",
+    "name": "Syndra",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Syndra.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Thresh",
+    "name": "Thresh",
+    "style": "Enganche",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Thresh.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Tristana",
+    "name": "Tristana",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Tristana.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Varus",
+    "name": "Varus",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Varus.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Veigar",
+    "name": "Veigar",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Veigar.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Vex",
+    "name": "Vex",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Vex.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Viktor",
+    "name": "Viktor",
+    "style": "Control",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Viktor.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Vladimir",
+    "name": "Vladimir",
+    "style": "Escalado",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Vladimir.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Xayah",
+    "name": "Xayah",
+    "style": "Hipercarry",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Xayah.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Xerath",
+    "name": "Xerath",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Xerath.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Yorick",
+    "name": "Yorick",
+    "style": "Dominante",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Yorick.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Ziggs",
+    "name": "Ziggs",
+    "style": "Poke",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Ziggs.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Zilean",
+    "name": "Zilean",
+    "style": "Soporte",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zilean.png",
+    "runes": [],
+    "build": [],
+    "video": "",
+    "pathing": "Pendiente"
+  },
+  {
+    "id": "Zoe",
+    "name": "Zoe",
+    "style": "Explosivo",
+    "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zoe.png",
+    "runes": [],
+    "build": [],
+    "video": "https://www.bilibili.com/video/BV1xdQfB6EJu",
+    "pathing": "Raptors → Krugs → Red → Wolves → Gromp → Blue"
   }
 ]
