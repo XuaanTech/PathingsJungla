@@ -7,6 +7,9 @@ import conceptos from '../data/conceptos.json';
 <Layout 
   title="Pathings Jungla | League of Legends" 
   description="Guías de jungla, full clears, builds, runas y conceptos avanzados para League of Legends."
+  image="https://pathingsjungla.pages.dev/img/og-image.jpg"
+  url="https://pathingsjungla.pages.dev/"
+  type="website"
 >
   <!-- HEADER -->
   <header id="site-header">
@@ -99,4 +102,19 @@ import conceptos from '../data/conceptos.json';
   <!-- CSS y JS específicos de esta página -->
   <link rel="stylesheet" href="/styles/styles.css" />
   <script src="/scripts/main.js" defer></script>
+
+  <!-- Datos estructurados (JSON-LD) específicos para la página de inicio -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Pathings Jungla | League of Legends",
+      "description": "Guías de jungla, full clears, builds, runas y conceptos avanzados para League of Legends.",
+      "url": "https://pathingsjungla.pages.dev",
+      "about": {
+        "@type": "Thing",
+        "name": "Guías de jungla para League of Legends"
+      }
+    }
+  </script>
 </Layout>
