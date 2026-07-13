@@ -1,20 +1,17 @@
 // =====================================
 // OBTENER ID DEL CONCEPTO DESDE LA URL
 // =====================================
-// Ejemplo: /conceptos/fullclear -> "fullclear"
 const pathSegments = window.location.pathname.split('/');
 const conceptoId = pathSegments[pathSegments.length - 1];
 
-// Si no hay ID, salimos (no debería ocurrir)
 if (!conceptoId) {
   console.warn('No se encontró ID en la URL');
 }
 
 // =====================================
-// CARGAR JSON DE CONCEPTOS
+// CARGAR JSON DE CONCEPTOS (RUTA ABSOLUTA)
 // =====================================
-// Desde /conceptos/fullclear, subimos dos niveles para llegar a /data
-fetch('../../data/conceptos.json')
+fetch('/data/conceptos.json')
     .then(res => {
       if (!res.ok) throw new Error('Error al cargar conceptos.json');
       return res.json();
@@ -43,7 +40,7 @@ fetch('../../data/conceptos.json')
         const iconEl = document.getElementById("concepto-icon");
         if (iconEl) {
             if (concepto.icon && concepto.icon.trim() !== "") {
-                iconEl.src = concepto.icon.trim(); 
+                iconEl.src = concepto.icon.trim();
                 iconEl.style.display = "block";
             } else {
                 iconEl.style.display = "none";
@@ -68,7 +65,7 @@ fetch('../../data/conceptos.json')
             descEl.textContent = concepto.description || concepto.shortDesc;
         }
 
-        // (Opcional) Actualizar título y meta description
+        // Actualizar título y meta description
         document.title = `${concepto.name} - Conceptos de Jungla | Pathings Jungla`;
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc && concepto.description) {
