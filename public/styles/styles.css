@@ -1,32 +1,45 @@
 /* ============================================================
    IMPORTACIÓN DE FUENTES
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap');
 
 /* ============================================================
-   VARIABLES CSS (Sistema de diseño)
+   VARIABLES CSS
    ============================================================ */
 :root {
-    /* Fondos */
     --bg: #060D17;
+    --bg-light: #0B1624;
     --panel: #101827;
     --panel2: #182232;
+    --panel-glass: rgba(16, 24, 39, 0.75);
 
-    /* Dorados */
     --gold: #C8AA6E;
     --gold-light: #E0CC9A;
+    --gold-dark: #A8884A;
+    --gold-glow: rgba(200, 170, 110, 0.3);
 
-    /* Textos */
     --text: #EDEDED;
     --text2: #8E9BB4;
+    --text-muted: #5A6A82;
 
-    /* Bordes */
     --border: #1F2D40;
     --border-gold: rgba(200, 170, 110, 0.25);
+    --border-glow: rgba(200, 170, 110, 0.5);
 
-    /* Utilidades */
-    --hover: rgba(200, 170, 110, 0.06);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-elevated: 0 20px 50px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 30px rgba(200, 170, 110, 0.15);
+
     --radius: 16px;
+    --radius-sm: 10px;
+    --radius-full: 9999px;
+
+    --transition-smooth: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --glass-bg: rgba(16, 24, 39, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.06);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* ============================================================
@@ -38,18 +51,48 @@
     box-sizing: border-box;
 }
 
-/* ============================================================
-   ESTILOS BASE DEL BODY
-   ============================================================ */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold-dark);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--bg);
+    transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+::selection {
+    background: var(--gold-glow);
+    color: #fff;
 }
 
 /* ============================================================
@@ -59,10 +102,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(8, 14, 24, 0.92);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    transition: box-shadow var(--transition-smooth);
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-glow), var(--gold), var(--gold-glow), transparent);
+    opacity: 0.3;
+    pointer-events: none;
 }
 
 .header-container {
@@ -73,24 +130,32 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    position: relative;
 }
 
 .logo h1 {
-    background: linear-gradient(135deg, #E8D5A3, #C8AA6E, #A8884A);
+    background: linear-gradient(135deg, #F5E6C4, var(--gold-light), var(--gold), var(--gold-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: -1px;
+    text-shadow: 0 0 40px rgba(200, 170, 110, 0.15);
+    transition: text-shadow var(--transition-smooth);
+}
+
+.logo h1:hover {
+    text-shadow: 0 0 60px rgba(200, 170, 110, 0.3);
 }
 
 .logo span {
     color: var(--text2);
     font-size: 12px;
     font-weight: 500;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
+    opacity: 0.7;
 }
 
 /* ============================================================
@@ -98,47 +163,68 @@ header {
    ============================================================ */
 #main-nav {
     display: flex;
-    gap: 6px;
+    gap: 8px;
 }
 
 #main-nav button {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    background: transparent;
+    border: none;
     color: var(--text2);
     cursor: pointer;
-    padding: 12px 22px;
-    border-radius: 30px;
+    padding: 10px 22px;
+    border-radius: var(--radius-full);
     font-weight: 600;
     font-size: 14px;
-    transition: all 0.2s ease;
+    transition: all var(--transition-smooth);
+    letter-spacing: 0.3px;
+}
+
+#main-nav button::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 60%;
+    height: 2px;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: transform var(--transition-smooth);
+    box-shadow: 0 0 12px var(--gold-glow);
 }
 
 #main-nav button:hover {
-    background: var(--hover);
     color: #fff;
-    border-color: var(--border-gold);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background: var(--hover);
+}
+
+#main-nav button:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+#main-nav button:active {
+    transform: scale(0.96);
 }
 
 /* ============================================================
-   HERO
+   HERO (fondo uniforme oscuro sin imagen)
    ============================================================ */
 #hero {
+    position: relative;
     min-height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 80px 20px;
-    background: 
-        linear-gradient(180deg, rgba(6,13,23,0.75) 0%, rgba(6,13,23,0.9) 100%),
-        url("img/rift.jpg");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(180deg, #0B1624 0%, #060D17 100%);
+    overflow: hidden;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 900px;
 }
 
@@ -148,42 +234,55 @@ header {
     margin-bottom: 25px;
     line-height: 1.1;
     letter-spacing: -2px;
-    background: linear-gradient(180deg, #FFFFFF, #E8D5A3, #C8AA6E);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #FFFFFF;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    animation: heroFadeIn 1s ease-out;
+}
+
+@keyframes heroFadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .hero-content p {
     color: var(--text2);
     font-size: 20px;
     margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-search {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    max-width: 100%;
 }
 
 .hero-search input {
-    width: 600px;
-    max-width: 100%;
+    width: 100%;
     padding: 18px 26px;
-    border: 2px solid rgba(200, 170, 110, 0.15);
-    border-radius: 50px;
-    background: rgba(16, 24, 39, 0.85);
+    border: 2px solid rgba(200, 170, 110, 0.2);
+    border-radius: var(--radius-full);
+    background: rgba(16, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
     color: white;
     font-size: 17px;
     outline: none;
-    transition: all 0.25s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-smooth);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
 .hero-search input::placeholder {
-    color: rgba(142, 155, 180, 0.6);
+    color: rgba(142, 155, 180, 0.5);
 }
 
 .hero-search input:focus {
     border-color: var(--gold);
-    box-shadow: 
-        0 0 0 3px rgba(200, 170, 110, 0.08),
-        0 0 20px rgba(200, 170, 110, 0.15),
-        0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 4px rgba(200, 170, 110, 0.1), 0 0 40px rgba(200, 170, 110, 0.15), 0 4px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
 }
 
 /* ============================================================
@@ -198,7 +297,7 @@ main {
 
 .section {
     display: none;
-    animation: fadeIn 0.35s ease-out;
+    animation: fadeIn 0.5s ease-out forwards;
 }
 
 .section.active {
@@ -206,12 +305,12 @@ main {
 }
 
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(15px);
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    to { 
-        opacity: 1; 
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -226,6 +325,10 @@ main {
     font-weight: 800;
     margin-bottom: 12px;
     letter-spacing: -1px;
+    background: linear-gradient(135deg, #fff, var(--gold-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .section-header p {
@@ -243,18 +346,22 @@ main {
 }
 
 .feature-card {
-    background: var(--panel);
-    border: 1px solid var(--border);
+    background: var(--panel-glass);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
     border-radius: var(--radius);
     padding: 32px 26px;
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+    position: relative;
+    overflow: hidden;
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.01);
     border-color: var(--border-gold);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-elevated), var(--shadow-glow);
 }
 
 .feature-card h3 {
@@ -277,28 +384,32 @@ main {
     display: flex;
     gap: 16px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 #filters input,
 #filters select {
     padding: 14px 20px;
-    background: var(--panel);
+    background: var(--panel-glass);
+    backdrop-filter: blur(4px);
     color: white;
-    border: 1px solid var(--border);
-    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
     font-size: 15px;
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: all var(--transition-smooth);
+    font-family: inherit;
 }
 
 #filters input:focus,
 #filters select:focus {
     border-color: var(--gold);
-    box-shadow: 0 0 0 2px rgba(200, 170, 110, 0.1);
+    box-shadow: 0 0 0 3px rgba(200, 170, 110, 0.1), var(--shadow-glow);
 }
 
 #filters input {
     flex: 1;
+    min-width: 180px;
 }
 
 #filters input::placeholder {
@@ -313,15 +424,16 @@ main {
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23C8AA6E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 14px center;
+    background-size: 12px 8px;
 }
 
 #filters select option {
-    background: #101827;
+    background: var(--panel);
     color: white;
 }
 
 /* ============================================================
-   LISTA DE CAMPEONES
+   LISTA DE CAMPEONES (tarjetas limpias)
    ============================================================ */
 #champion-list {
     display: grid;
@@ -332,34 +444,37 @@ main {
 .champion-card {
     overflow: hidden;
     cursor: pointer;
-    background: var(--panel);
+    background: var(--panel-glass);
+    backdrop-filter: blur(4px);
     border-radius: var(--radius);
-    border: 1px solid var(--border);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+    position: relative;
 }
 
 .champion-card:hover {
     transform: translateY(-10px);
     border-color: var(--border-gold);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-elevated), var(--shadow-glow);
 }
 
 .champion-icon {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    transition: transform 0.35s ease;
+    transition: transform var(--transition-smooth);
 }
 
 .champion-card:hover .champion-icon {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
 
 .champion-card h3 {
     padding: 18px 20px 6px;
     font-size: 20px;
     font-weight: 700;
+    color: var(--text);
 }
 
 .champion-card p {
@@ -378,21 +493,21 @@ main {
 }
 
 .concept-card {
-    background: var(--panel);
+    background: var(--panel-glass);
+    backdrop-filter: blur(4px);
     padding: 32px;
     border-radius: var(--radius);
-    border: 1px solid var(--border);
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-smooth);
+    box-shadow: var(--shadow-card);
 }
 
 .concept-card:hover {
     border-color: var(--border-gold);
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-elevated), var(--shadow-glow);
 }
 
-/* --- ELIMINAR SUBRAYADO Y COLOR AZUL EN ENLACES DE CONCEPTOS --- */
 .concept-card a {
     text-decoration: none;
     color: inherit;
@@ -404,6 +519,12 @@ main {
     margin-bottom: 12px;
     font-size: 21px;
     font-weight: 700;
+    transition: color var(--transition-smooth);
+}
+
+.concept-card a:hover h3 {
+    color: #fff;
+    text-shadow: 0 0 20px var(--gold-glow);
 }
 
 .concept-card a p {
@@ -418,10 +539,24 @@ main {
 footer {
     margin-top: 0;
     padding: 40px 20px 30px;
-    border-top: 2px solid var(--border-gold);
-    background: linear-gradient(180deg, rgba(6,13,23,0.9) 0%, rgba(6,13,23,1) 100%);
+    border-top: 1px solid var(--glass-border);
+    background: linear-gradient(180deg, var(--bg-light), var(--bg));
     text-align: center;
     color: var(--text2);
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    border-radius: 2px;
+    box-shadow: 0 0 30px var(--gold-glow);
 }
 
 .footer-content {
@@ -448,13 +583,13 @@ footer {
     color: var(--gold);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: all var(--transition-smooth);
     border-bottom: 1px dotted transparent;
 }
 
 .footer-content a:hover {
     color: #fff;
-    text-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
+    text-shadow: 0 0 20px var(--gold-glow);
     border-bottom-color: var(--gold);
 }
 
@@ -466,40 +601,8 @@ footer {
     margin: 4px 0;
 }
 
-footer::before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: var(--gold);
-    margin: -42px auto 20px;
-    border-radius: 2px;
-    box-shadow: 0 0 20px rgba(200, 170, 110, 0.2);
-}
-
 /* ============================================================
-   SCROLLBAR Y SELECCIÓN
-   ============================================================ */
-::-webkit-scrollbar {
-    width: 6px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(200, 170, 110, 0.25);
-    border-radius: 10px;
-}
-
-::selection {
-    background: rgba(200, 170, 110, 0.25);
-    color: #fff;
-}
-
-/* ============================================================
-   RESPONSIVE (mismos bloques que tenías, solo los mantengo)
+   RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
     .header-container {
@@ -510,7 +613,7 @@ footer::before {
         gap: 20px;
     }
     #champion-list {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -533,10 +636,10 @@ footer::before {
     #main-nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 6px;
+        gap: 4px;
     }
     #main-nav button {
-        padding: 10px 18px;
+        padding: 8px 16px;
         font-size: 13px;
     }
     #hero {
@@ -551,9 +654,11 @@ footer::before {
         font-size: 17px;
         margin-bottom: 30px;
     }
-    .hero-search input {
+    .hero-search {
         width: 100%;
         max-width: 500px;
+    }
+    .hero-search input {
         padding: 16px 22px;
         font-size: 16px;
     }
@@ -573,12 +678,6 @@ footer::before {
     .feature-card {
         padding: 24px 20px;
     }
-    .feature-card h3 {
-        font-size: 18px;
-    }
-    .feature-card p {
-        font-size: 14px;
-    }
     .concept-grid {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
@@ -586,26 +685,12 @@ footer::before {
     .concept-card {
         padding: 24px 20px;
     }
-    .concept-card h3 {
-        font-size: 18px;
-    }
-    .concept-card p {
-        font-size: 14px;
-    }
     #champion-list {
-        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
     .champion-icon {
         height: 200px;
-    }
-    .champion-card h3 {
-        font-size: 17px;
-        padding: 14px 16px 4px;
-    }
-    .champion-card p {
-        font-size: 13px;
-        padding: 0 16px 16px;
     }
     #filters {
         flex-direction: column;
@@ -614,16 +699,9 @@ footer::before {
     #filters input,
     #filters select {
         width: 100%;
-        padding: 14px 18px;
-        font-size: 15px;
-        border-radius: 12px;
     }
     footer {
-        margin-top: 60px;
         padding: 32px 20px 24px;
-    }
-    .footer-content p {
-        font-size: 0.9rem;
     }
 }
 
@@ -638,9 +716,6 @@ footer::before {
     .logo span {
         font-size: 9px;
         letter-spacing: 0.8px;
-    }
-    #main-nav {
-        gap: 4px;
     }
     #main-nav button {
         padding: 6px 12px;
@@ -659,13 +734,11 @@ footer::before {
     .hero-content p {
         font-size: 14px;
         margin-bottom: 24px;
-        line-height: 1.5;
     }
     .hero-search input {
         padding: 12px 16px;
         font-size: 14px;
         border-radius: 30px;
-        max-width: 100%;
     }
     main {
         padding: 30px 16px;
@@ -685,14 +758,6 @@ footer::before {
     }
     .feature-card {
         padding: 18px 16px;
-        border-radius: 14px;
-    }
-    .feature-card h3 {
-        font-size: 17px;
-        margin-bottom: 8px;
-    }
-    .feature-card p {
-        font-size: 14px;
     }
     .concept-grid {
         grid-template-columns: 1fr;
@@ -700,24 +765,13 @@ footer::before {
     }
     .concept-card {
         padding: 18px 16px;
-        border-radius: 14px;
-    }
-    .concept-card h3 {
-        font-size: 17px;
-        margin-bottom: 6px;
-    }
-    .concept-card p {
-        font-size: 14px;
     }
     #champion-list {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
     .champion-icon {
         height: 160px;
-    }
-    .champion-card {
-        border-radius: 14px;
     }
     .champion-card h3 {
         font-size: 16px;
@@ -734,24 +788,15 @@ footer::before {
     #filters select {
         padding: 12px 14px;
         font-size: 14px;
-        border-radius: 10px;
-    }
-    #filters select {
-        background-position: right 12px center;
     }
     footer {
-        margin-top: 40px;
         padding: 24px 16px 18px;
     }
     .footer-content p {
         font-size: 0.8rem;
     }
-    .footer-content .separator {
-        width: 30px;
-    }
     footer::before {
-        width: 40px;
-        margin: -32px auto 16px;
+        width: 120px;
     }
 }
 
@@ -776,9 +821,6 @@ footer::before {
     .section-header h2 {
         font-size: 22px;
     }
-    .section-header p {
-        font-size: 14px;
-    }
     #champion-list {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -793,22 +835,5 @@ footer::before {
     .champion-card p {
         font-size: 11px;
         padding: 0 10px 10px;
-    }
-    .feature-card,
-    .concept-card {
-        padding: 14px 12px;
-    }
-    .feature-card h3,
-    .concept-card h3 {
-        font-size: 15px;
-    }
-    .feature-card p,
-    .concept-card p {
-        font-size: 13px;
-    }
-    #filters input,
-    #filters select {
-        padding: 10px 12px;
-        font-size: 13px;
     }
 }
