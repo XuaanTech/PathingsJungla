@@ -36,16 +36,16 @@ fetch('/data/conceptos.json')
         const shortEl = document.getElementById("concepto-short");
         if (shortEl) shortEl.textContent = concepto.shortDesc;
 
-        // Icono
-        const iconEl = document.getElementById("concepto-icon");
-        if (iconEl) {
-            if (concepto.icon && concepto.icon.trim() !== "") {
-                iconEl.src = concepto.icon.trim();
-                iconEl.style.display = "block";
-            } else {
-                iconEl.style.display = "none";
-            }
-        }
+        // Icono (NO lo tocamos para evitar rutas relativas. Astro ya lo dejó correcto)
+        // const iconEl = document.getElementById("concepto-icon");
+        // if (iconEl) {
+        //     if (concepto.icon && concepto.icon.trim() !== "") {
+        //         iconEl.src = concepto.icon.trim();
+        //         iconEl.style.display = "block";
+        //     } else {
+        //         iconEl.style.display = "none";
+        //     }
+        // }
 
         // Video
         const videoSection = document.getElementById("video-section");
@@ -76,5 +76,4 @@ fetch('/data/conceptos.json')
     })
     .catch(err => {
         console.error("Error cargando conceptos.json:", err);
-        // No mostramos error en pantalla para no romper la experiencia si el JSON no está disponible
     });
