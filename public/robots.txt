@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pathingsjungla.pages.dev/sitemap.xml
