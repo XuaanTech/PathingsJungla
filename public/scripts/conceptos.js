@@ -43,7 +43,7 @@ fetch('../../data/conceptos.json')
         const iconEl = document.getElementById("concepto-icon");
         if (iconEl) {
             if (concepto.icon && concepto.icon.trim() !== "") {
-                iconEl.src = concepto.icon;
+                iconEl.src = concepto.icon.trim(); 
                 iconEl.style.display = "block";
             } else {
                 iconEl.style.display = "none";
