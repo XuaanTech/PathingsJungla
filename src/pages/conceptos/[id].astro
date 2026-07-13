@@ -28,7 +28,7 @@ const { item } = Astro.props;
     <div class="header-content">
       <a href="/" class="back-button">← Volver al inicio</a>
       <!-- Icono (solo si existe) -->
-      {item.icon && <img id="concepto-icon" class="concepto-header-icon" src={item.icon.trim()} alt={item.name} style="display:block" />}
+      {item.icon && <img id="concepto-icon" class="concepto-header-icon" src={item.icon.trim().startsWith('../') ? item.icon.trim().replace(/^\.\.\//, '/') : item.icon.trim()} alt={item.name} style="display:block" />}
       <div class="concepto-info">
         <h1 id="concepto-name">{item.name}</h1>
         <span id="concepto-short" class="concepto-style">{item.shortDesc}</span>
