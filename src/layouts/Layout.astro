@@ -3,23 +3,71 @@ export interface Props {
   title: string;
   description?: string;
   image?: string;
+  url?: string;
+  type?: string;
 }
-const { title, description, image } = Astro.props;
+
+const { title, description, image, url, type } = Astro.props;
+const siteTitle = title || "Pathings Jungla | League of Legends";
+const siteDescription = description || "Guías de jungla, full clears, builds, runas y conceptos avanzados para League of Legends.";
+const siteImage = image || "https://pathingsjungla.pages.dev/img/og-image.jpg";
+const siteUrl = url || "https://pathingsjungla.pages.dev/";
+const siteType = type || "website";
 ---
+
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
-    {description && <meta name="description" content={description} />}
-    {image && <meta property="og:image" content={image} />}
-    <meta property="og:title" content={title} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- Los CSS y JS se cargarán en cada página, no aquí -->
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <slot />
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título y descripción -->
+  <title>{siteTitle}</title>
+  <meta name="description" content={siteDescription} />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Palabras clave -->
+  <meta name="keywords" content="League of Legends, jungla, pathings, guías, full clear, builds, runas, macro, campeones, LoL" />
+  <meta name="author" content="Pathings Jungla" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={siteTitle} />
+  <meta property="og:description" content={siteDescription} />
+  <meta property="og:image" content={siteImage} />
+  <meta property="og:url" content={siteUrl} />
+  <meta property="og:type" content={siteType} />
+  <meta property="og:site_name" content="Pathings Jungla" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={siteTitle} />
+  <meta name="twitter:description" content={siteDescription} />
+  <meta name="twitter:image" content={siteImage} />
+  <meta name="twitter:site" content="@PathingsJungla" />
+
+  <!-- FAVICON - FORZAR RECARGA CON ?v=6 -->
+  <link rel="icon" href="/favicon.ico?v=6" sizes="any" />
+  <!-- Fallback por si el .ico no carga (opcional) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>" />
+
+  <!-- Datos estructurados (JSON-LD) para toda la web -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pathings Jungla",
+      "url": "https://pathingsjungla.pages.dev",
+      "description": "Guías de jungla para League of Legends",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pathingsjungla.pages.dev/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+<body>
+  <slot />
+</body>
 </html>

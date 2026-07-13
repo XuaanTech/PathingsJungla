@@ -1,74 +1,83 @@
 // =====================================
 // OBTENER ID DEL CONCEPTO DESDE LA URL
 // =====================================
-const params = new URLSearchParams(window.location.search);
-const conceptoId = params.get("id");
+// Ejemplo: /conceptos/fullclear -> "fullclear"
+const pathSegments = window.location.pathname.split('/');
+const conceptoId = pathSegments[pathSegments.length - 1];
+
+// Si no hay ID, salimos (no debería ocurrir)
+if (!conceptoId) {
+  console.warn('No se encontró ID en la URL');
+}
 
 // =====================================
 // CARGAR JSON DE CONCEPTOS
 // =====================================
-fetch("../data/conceptos.json")
-    .then(res => res.json())
+// Desde /conceptos/fullclear, subimos dos niveles para llegar a /data
+fetch('../../data/conceptos.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Error al cargar conceptos.json');
+      return res.json();
+    })
     .then(data => {
         // Buscar el concepto por ID
         const concepto = data.find(c => c.id === conceptoId);
 
-        // Si no existe, mostrar mensaje de error
         if (!concepto) {
-            document.body.innerHTML = `
-                <div style="text-align:center;padding:80px 20px;color:var(--text);">
-                    <h1 style="color:var(--gold-light);">Concepto no encontrado</h1>
-                    <p>El ID proporcionado no coincide con ningún concepto.</p>
-                    <a href="../index.html" style="color:var(--gold);">Volver al inicio</a>
-                </div>`;
+            console.error('Concepto no encontrado:', conceptoId);
             return;
         }
 
         // =====================================
-        // RELLENAR DATOS EN EL HTML
+        // ACTUALIZAR EL DOM CON LOS DATOS FRESCOS
         // =====================================
         // Nombre
-        document.getElementById("concepto-name").textContent = concepto.name;
-        // Descripción corta (badge)
-        document.getElementById("concepto-short").textContent = concepto.shortDesc;
+        const nameEl = document.getElementById("concepto-name");
+        if (nameEl) nameEl.textContent = concepto.name;
 
-        // Icono (si existe y hay imagen)
+        // Descripción corta
+        const shortEl = document.getElementById("concepto-short");
+        if (shortEl) shortEl.textContent = concepto.shortDesc;
+
+        // Icono
         const iconEl = document.getElementById("concepto-icon");
-        if (concepto.icon && concepto.icon.trim() !== "") {
-            iconEl.src = concepto.icon;
-            iconEl.style.display = "block";
-        } else {
-            iconEl.style.display = "none";
+        if (iconEl) {
+            if (concepto.icon && concepto.icon.trim() !== "") {
+                iconEl.src = concepto.icon;
+                iconEl.style.display = "block";
+            } else {
+                iconEl.style.display = "none";
+            }
         }
 
-        // =====================================
-        // VIDEO (si tiene URL)
-        // =====================================
+        // Video
         const videoSection = document.getElementById("video-section");
         const videoIframe = document.getElementById("concepto-video");
-        if (concepto.video && concepto.video.trim() !== "") {
-            videoIframe.src = concepto.video;
-            videoSection.style.display = "block";
-        } else {
-            videoSection.style.display = "none";
+        if (videoSection && videoIframe) {
+            if (concepto.video && concepto.video.trim() !== "") {
+                videoIframe.src = concepto.video;
+                videoSection.style.display = "block";
+            } else {
+                videoSection.style.display = "none";
+            }
         }
 
-        // =====================================
-        // DESCRIPCIÓN LARGA
-        // =====================================
-        document.getElementById("concepto-descripcion").textContent = concepto.description;
+        // Descripción larga
+        const descEl = document.getElementById("concepto-descripcion");
+        if (descEl) {
+            descEl.textContent = concepto.description || concepto.shortDesc;
+        }
 
-        // =====================================
-        // RECURSOS ADICIONALES (opcional, de momento estático)
-        // =====================================
-        // Puedes personalizar esta sección más adelante
+        // (Opcional) Actualizar título y meta description
+        document.title = `${concepto.name} - Conceptos de Jungla | Pathings Jungla`;
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && concepto.description) {
+            metaDesc.content = concepto.description.substring(0, 150) + '...';
+        }
+
+        console.log(`✅ Concepto "${concepto.name}" cargado correctamente.`);
     })
     .catch(err => {
         console.error("Error cargando conceptos.json:", err);
-        document.body.innerHTML = `
-            <div style="text-align:center;padding:80px 20px;color:var(--text);">
-                <h1 style="color:var(--gold-light);">Error</h1>
-                <p>No se pudieron cargar los datos del concepto.</p>
-                <a href="../index.html" style="color:var(--gold);">Volver al inicio</a>
-            </div>`;
+        // No mostramos error en pantalla para no romper la experiencia si el JSON no está disponible
     });
