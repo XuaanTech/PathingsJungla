@@ -50,9 +50,7 @@ const { item } = Astro.props;
     <!-- Explicación detallada -->
     <section>
       <h2>Explicación</h2>
-      <div id="concepto-descripcion">
-        {item.description || item.shortDesc}
-      </div>
+      <div id="concepto-descripcion" set:html={item.description || item.shortDesc} />
     </section>
 
     <!-- Recursos adicionales (enlaces, etc.) -->
@@ -76,6 +74,6 @@ const { item } = Astro.props;
   </footer>
 
   <!-- Script para cargar el JSON dinámicamente (sobrescribe el contenido estático) -->
-  <script src="/scripts/conceptos.js" defer></script>
+<!--  <script src="/scripts/conceptos.js" defer></script> Comentamos script para que no lo pille la página temporalmente-->
 </body>
 </html>
