@@ -59,10 +59,10 @@ fetch('/data/conceptos.json')
             }
         }
 
-        // Descripción larga
+        // Descripción larga (AHORA ACEPTA HTML COMO <br>)
         const descEl = document.getElementById("concepto-descripcion");
         if (descEl) {
-            descEl.textContent = concepto.description || concepto.shortDesc;
+            descEl.innerHTML = concepto.description || concepto.shortDesc;  // ✅ CAMBIADO
         }
 
         // Actualizar título y meta description
