@@ -25,33 +25,48 @@ const siteType = type || "website";
   <title>{siteTitle}</title>
   <meta name="description" content={siteDescription} />
   <meta name="robots" content="index, follow" />
-
-  <!-- Palabras clave -->
   <meta name="keywords" content="League of Legends, jungla, pathings, guías, full clear, builds, runas, macro, campeones, LoL" />
   <meta name="author" content="Pathings Jungla" />
 
-  <!-- Open Graph -->
+  <!-- Canonical -->
+  <link rel="canonical" href={siteUrl} />
+
+  <!-- Color de tema para navegadores móviles -->
+  <meta name="theme-color" content="#060D17" />
+
+  <!-- Open Graph mejorado -->
   <meta property="og:title" content={siteTitle} />
   <meta property="og:description" content={siteDescription} />
   <meta property="og:image" content={siteImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content={siteUrl} />
   <meta property="og:type" content={siteType} />
   <meta property="og:site_name" content="Pathings Jungla" />
   <meta property="og:locale" content="es_ES" />
 
-  <!-- Twitter Cards -->
+  <!-- Twitter Cards mejoradas -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={siteTitle} />
   <meta name="twitter:description" content={siteDescription} />
   <meta name="twitter:image" content={siteImage} />
+  <meta name="twitter:image:alt" content="Pathings Jungla - Guías de jungla LoL" />
   <meta name="twitter:site" content="@PathingsJungla" />
 
-  <!-- FAVICON - FORZAR RECARGA CON ?v=6 -->
+  <!-- Iconos del sitio (favicon, Apple, Android) -->
   <link rel="icon" href="/favicon.ico?v=6" sizes="any" />
-  <!-- Fallback por si el .ico no carga (opcional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=6" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=6" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=6" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Datos estructurados (JSON-LD) para toda la web -->
+  <!-- Configuración para aplicaciones web progresivas (opcional) -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Pathings Jungla" />
+
+  <!-- Datos estructurados globales (WebSite) -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,5 +84,6 @@ const siteType = type || "website";
 </head>
 <body>
   <slot />
+  <!-- Aquí no se incluyen scripts ni CSS globales, cada página los suyos -->
 </body>
 </html>

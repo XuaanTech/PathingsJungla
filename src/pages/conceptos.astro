@@ -1,18 +1,20 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import conceptos from '../data/conceptos.json';
+
+const pageTitle = "Conceptos de Jungla | Pathings Jungla";
+const pageDescription = "Todos los conceptos avanzados para mejorar tu macro en la jungla de League of Legends.";
+const pageUrl = "https://pathingsjungla.pages.dev/conceptos/";
+const pageImage = "https://pathingsjungla.pages.dev/img/og-image.jpg"; // o una imagen específica
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conceptos de Jungla</title>
-  <meta name="description" content="Todos los conceptos avanzados para mejorar tu macro." />
-  <link rel="stylesheet" href="/styles/conceptos.css" />
-  <link rel="icon" href="/favicon.ico" />
-</head>
-<body>
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  url={pageUrl}
+  image={pageImage}
+  type="website"
+>
   <main>
     <h1>Conceptos de Jungla</h1>
     <div class="concept-grid">
@@ -27,6 +29,9 @@ import conceptos from '../data/conceptos.json';
     </div>
     <a href="/">← Volver al inicio</a>
   </main>
-<!--  <script src="/scripts/conceptos.js" defer></script> Comentamos script para que no lo pille la página temporalmente-->
-</body>
-</html>
+
+  <!-- CSS específico de esta página -->
+  <link rel="stylesheet" href="/styles/conceptos.css" />
+  <!-- JS específico (si lo necesitas en el futuro) -->
+  <!-- <script src="/scripts/conceptos.js" defer></script> -->
+</Layout>

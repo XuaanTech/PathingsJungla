@@ -1,11 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import pathings from '../data/champions-pathings.json'; // <- Cambiado
+import pathings from '../data/champions-pathings.json';
+
+const pageTitle = "Pathings de Jungla - Todos los campeones | League of Legends";
+const pageDescription = "Descubre los mejores pathings, rutas de jungla y full clears para todos los campeones de League of Legends. Guías actualizadas con builds, runas y vídeos.";
+const pageUrl = "https://pathingsjungla.pages.dev/pathings/";
+const pageImage = "https://pathingsjungla.pages.dev/img/og-image.jpg";
 ---
 
-<Layout title="Pathings - Todos los campeones" description="Listado completo de pathings de jungla para cada campeón.">
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type="website"
+>
   <main>
     <h1>Pathings de Jungla</h1>
+    <p class="page-subtitle">Encuentra la ruta óptima para cada campeón y domina la jungla desde el primer minuto.</p>
     <div class="pathing-grid">
       {pathings.map((item) => (
         <article class="pathing-card" data-id={item.id}>

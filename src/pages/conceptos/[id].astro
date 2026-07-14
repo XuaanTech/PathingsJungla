@@ -1,4 +1,5 @@
 ---
+import Layout from '../../layouts/Layout.astro';
 import conceptos from '../../data/conceptos.json';
 
 export function getStaticPaths() {
@@ -9,20 +10,33 @@ export function getStaticPaths() {
 }
 
 const { item } = Astro.props;
+
+// Título de la página
+const pageTitle = `${item.name} - Conceptos de Jungla | Pathings Jungla`;
+
+// Descripción para el meta (limpia de HTML y truncada)
+const rawText = item.description || item.shortDesc;           // texto original con HTML
+const plainText = rawText.replace(/<[^>]*>/g, '').trim();     // eliminamos etiquetas
+const pageDescription = plainText.length > 150
+  ? plainText.substring(0, 147) + '...'
+  : plainText;
+
+// Imagen para Open Graph (usa el icono si no es ruta relativa)
+const pageImage = item.icon && !item.icon.startsWith('../')
+  ? item.icon.trim().replace(/^\.\.\//, '/')
+  : "https://pathingsjungla.pages.dev/img/og-image.jpg";
+
+const pageUrl = `https://pathingsjungla.pages.dev/conceptos/${item.id}`;
+const pageType = "article";
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{item.name} - Conceptos de Jungla | Pathings Jungla</title>
-  <meta name="description" content={item.description ? item.description.substring(0, 150) : item.shortDesc} />
-  <link rel="stylesheet" href="/styles/conceptos.css" />
-  <link rel="icon" href="/favicon.ico" />
-</head>
-<body>
-
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type={pageType}
+>
   <!-- ================= HEADER ================= -->
   <header class="concepto-header">
     <div class="header-content">
@@ -73,7 +87,7 @@ const { item } = Astro.props;
     </div>
   </footer>
 
-  <!-- Script para cargar el JSON dinámicamente (sobrescribe el contenido estático) -->
-<!--  <script src="/scripts/conceptos.js" defer></script> Comentamos script para que no lo pille la página temporalmente-->
-</body>
-</html>
+  <!-- Estilos propios de esta página -->
+  <link rel="stylesheet" href="/styles/conceptos.css" />
+  <!-- <script src="/scripts/conceptos.js" defer></script> -->
+</Layout>

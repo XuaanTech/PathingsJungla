@@ -337,6 +337,154 @@ main {
 }
 
 /* ============================================================
+   HOME CONTENT (página de inicio)
+   ============================================================ */
+.home-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-intro {
+    background: var(--panel-glass);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: 36px 32px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow-card);
+    transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--gold), var(--gold-dark));
+    border-radius: 2px 0 0 2px;
+    opacity: 0.6;
+}
+
+.home-intro:hover {
+    border-color: var(--border-gold);
+    box-shadow: var(--shadow-elevated), var(--shadow-glow);
+}
+
+.home-intro h3 {
+    color: var(--gold-light);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.home-intro p {
+    color: var(--text2);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 32px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+    transition: transform var(--transition-smooth);
+}
+
+.benefits-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: var(--gold-glow);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity var(--transition-smooth);
+}
+
+.benefits-list li:hover {
+    transform: translateX(4px);
+}
+
+.benefits-list li:hover::before {
+    opacity: 1;
+}
+
+/* Subtítulo especial dentro del header de la sección */
+.section-header .subtitle {
+    color: var(--text2);
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+/* Ajustes responsive para la home */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 0 16px;
+    }
+    .home-intro {
+        padding: 28px 24px;
+        margin-bottom: 24px;
+    }
+    .home-intro h3 {
+        font-size: 21px;
+    }
+    .home-intro p {
+        font-size: 15px;
+    }
+    .benefits-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .benefits-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-intro {
+        padding: 22px 18px;
+        border-radius: var(--radius-sm);
+    }
+    .home-intro h3 {
+        font-size: 19px;
+    }
+    .home-intro p {
+        font-size: 14px;
+    }
+    .benefits-list li {
+        font-size: 13px;
+        padding-left: 26px;
+    }
+    .benefits-list li::before {
+        width: 12px;
+        height: 12px;
+        top: 5px;
+    }
+}
+
+/* ============================================================
    FEATURES
    ============================================================ */
 .feature-grid {

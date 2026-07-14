@@ -1,4 +1,5 @@
 ---
+import Layout from '../../layouts/Layout.astro';
 import pathings from '../../data/champions-pathings.json';
 
 export function getStaticPaths() {
@@ -10,23 +11,25 @@ export function getStaticPaths() {
 
 const { item } = Astro.props;
 
+// Variables para las metaetiquetas (usa las mismas props que index.astro)
+const pageTitle = `${item.name} - Pathing Jungla | League of Legends`;
+const pageDescription = `Guía de jungla para ${item.name}: pathing óptimo, runas y build.`;
+const pageImage = item.icon || "https://pathingsjungla.pages.dev/img/og-image.jpg";
+const pageUrl = `https://pathingsjungla.pages.dev/pathing/${item.id}`;
+const pageType = "article";
+
 // Verificamos si hay datos de runas o build
 const hasRunes = item.runes && item.runes.length > 0;
 const hasBuild = item.build && item.build.length > 0;
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{item.name} - Pathing Jungla | League of Legends</title>
-  <meta name="description" content={`Guía de jungla para ${item.name}: pathing óptimo, runas y build.`} />
-  <link rel="stylesheet" href="/styles/pathings.css" />
-  <link rel="icon" href="/favicon.ico" />
-</head>
-<body>
-
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  image={pageImage}
+  url={pageUrl}
+  type={pageType}
+>
   <!-- HEADER DEL CAMPEÓN -->
   <header class="champion-header">
     <div class="header-content">
@@ -42,13 +45,13 @@ const hasBuild = item.build && item.build.length > 0;
   <!-- CONTENIDO PRINCIPAL -->
   <div class="guide-container">
 
-    <!-- SECCIÓN DE RUNAS Y BUILD (CON ESTILOS EN LÍNEA) -->
+    <!-- SECCIÓN DE RUNAS Y BUILD -->
     <section>
       <h2>🪄 Runas y ⚔️ Build</h2>
       
       <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%;">
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; width: 100%;">
-          <!-- Runas (solo si hay datos) -->
+          <!-- Runas -->
           {hasRunes && (
             <div style="flex: 0 1 auto; min-width: 200px; text-align: center;">
               <h3 style="color: var(--gold-light); margin-bottom: 10px; font-size: 18px;">Runas</h3>
@@ -60,7 +63,7 @@ const hasBuild = item.build && item.build.length > 0;
             </div>
           )}
 
-          <!-- Build (solo si hay datos) -->
+          <!-- Build -->
           {hasBuild && (
             <div style="flex: 0 1 auto; min-width: 200px; text-align: center;">
               <h3 style="color: var(--gold-light); margin-bottom: 10px; font-size: 18px;">Build</h3>
@@ -119,5 +122,7 @@ const hasBuild = item.build && item.build.length > 0;
     </div>
   </footer>
 
-</body>
-</html>
+  <!-- Estilos y scripts propios (se cargan solo en esta página) -->
+  <link rel="stylesheet" href="/styles/pathings.css" />
+  <!-- <script src="/scripts/pathings.js" defer></script> -->
+</Layout>
