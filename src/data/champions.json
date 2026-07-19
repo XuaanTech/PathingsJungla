@@ -1018,5 +1018,23 @@
     "name": "Zyra",
     "style": "Control",
     "icon": "https://ddragon.leagueoflegends.com/cdn/15.13.1/img/champion/Zyra.png"
+  },
+  {
+    "id": "Locke",
+    "name": "Locke",
+    "style": "Agresivo",
+    "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/805.png"
+  },
+  {
+    "id": "Zaahen",
+    "name": "Zaahen",
+    "style": "Agresivo",
+    "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/904.png"
+  },
+  {
+    "id": "Yunara",
+    "name": "Yunara",
+    "style": "Hipercarry",
+    "icon": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/804.png"
   }
 ]
